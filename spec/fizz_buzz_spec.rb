@@ -17,4 +17,8 @@ describe '#fizz_buzz' do
   it "will return the number if no conditions are met" do
     expect(fizz_buzz(2)).to eq 2
   end
+
+  it "will return 'WTF?' if number is negative" do
+    expect(fizz_buzz(-2)).to eq "WTF?"
+  end
 end
