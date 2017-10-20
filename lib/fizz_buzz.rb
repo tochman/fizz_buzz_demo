@@ -1,11 +1,15 @@
 def fizz_buzz(number)
-  if number % 15 == 0
+  if number_has_zero_as_reminder?(number, 15)
     'fizzbuzz'
-  elsif number % 5 == 0
+  elsif number_has_zero_as_reminder?(number, 5)
     'buzz'
-  elsif number % 3 == 0
+  elsif number_has_zero_as_reminder?(number, 3)
     'fizz'
   else
     number
   end
+end
+
+def number_has_zero_as_reminder?(number, divider)
+  number % divider == 0
 end
