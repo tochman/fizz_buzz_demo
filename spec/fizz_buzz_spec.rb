@@ -21,4 +21,12 @@ describe '#fizz_buzz' do
   it "will return 'WTF?' if number is negative" do
     expect(fizz_buzz(-2)).to eq "WTF?"
   end
+
+  it "will return 'WTF?' if number is negative and divisable by 5" do
+    expect(fizz_buzz(-5)).to eq "WTF?"
+  end
+
+  it "will return 'WTF?' if number is negative and divisable by 15" do
+    expect(fizz_buzz(-15)).to eq "WTF?"
+  end
 end
