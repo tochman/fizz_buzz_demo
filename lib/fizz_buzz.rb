@@ -1,8 +1,8 @@
 def fizz_buzz(number)
-  if number_has_zero_as_reminder?(number, 15)
-    'fizzbuzz'
-  elsif number < 0
+  if number < 0
     'WTF?'
+  elsif number_has_zero_as_reminder?(number, 15)
+    'fizzbuzz'
   elsif number_has_zero_as_reminder?(number, 5)
     'buzz'
   elsif number_has_zero_as_reminder?(number, 3)
