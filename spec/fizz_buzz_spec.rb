@@ -6,4 +6,8 @@ describe '#fizz_buzz' do
     expect(fizz_buzz(3)).to eq 'fizz'
   end
 
+  it "will return 'buzz' if the number is divisable by 5" do
+    expect(fizz_buzz(10)).to eq 'buzz'
+  end
+  
 end
