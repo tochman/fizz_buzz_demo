@@ -9,5 +9,8 @@ describe '#fizz_buzz' do
   it "will return 'buzz' if the number is divisable by 5" do
     expect(fizz_buzz(10)).to eq 'buzz'
   end
-  
+
+  it "will return 'fizzbuzz' if the number is divisable by 15" do
+    expect(fizz_buzz(15)).to eq 'fizzbuzz'
+  end
 end
