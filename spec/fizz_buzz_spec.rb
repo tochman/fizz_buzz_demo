@@ -1,6 +1,11 @@
 require './lib/fizz_buzz.rb'
 
 describe '#fizz_buzz' do
+
+  it "will return 'WTF?' if number is negative" do
+    expect(fizz_buzz('text')).to eq "WTF?"
+  end
+
   it "will return 'WTF?' if number is negative" do
     expect(fizz_buzz(-2)).to eq "WTF?"
   end

@@ -1,5 +1,5 @@
 def fizz_buzz(number)
-  if number < 0
+  if number_is_invalid(number)
     'WTF?'
   elsif number_has_zero_as_reminder?(number, 15)
     'fizzbuzz'
@@ -14,4 +14,8 @@ end
 
 def number_has_zero_as_reminder?(number, divider)
   number % divider == 0
+end
+
+def number_is_invalid(number)
+  !number.is_a? Integer or number < 0
 end
